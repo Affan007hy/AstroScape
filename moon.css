@@ -1,0 +1,344 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif; /* Fallback font */
+}
+
+/* Setting maximum width for the body */
+body {
+    max-width: 100%;
+}
+
+/* Styling the header with a linear gradient background and an image */
+header {
+    background: linear-gradient(135deg, rgba(0,0,0,1),rgba(0,0,0,0.2)), url('moons.jpeg');
+    min-height: 100vh; /* Minimum height equal to the viewport height */
+    background-size: cover; /* Making sure the background image covers the entire header */
+}
+
+/* Styling the navigation bar */
+nav {
+    width: 100%;
+    height: 3.5rem; /* Setting a fixed height for the navigation bar */
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling the logo */
+nav .logo {
+    width: 25%;
+    margin: 0 0 0 12.5%; /* Centering the logo */
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling the menu */
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Styling links within the menu */
+nav .menu a {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect on menu items */
+.menu :hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Scaling effect on hover */
+    transition: all 0.20s ease; /* Smooth transition */
+    color: rgb(204, 200, 200); /* Changing text color on hover */
+}
+
+/* Styling the main content section */
+main {
+    height: 85vh; /* Setting the height of the main content section */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+    margin-left: 4%; /* Adding left margin */
+}
+
+/* Styling heading in the main content */
+.head {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+/* Styling paragraphs in the main content */
+main section p {
+    line-height: 1.5rem;
+    font-size: 17.4px;
+}
+
+/* Styling the main container */
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the content section */
+.content {
+    max-width: 70%;
+    margin-top: 20px;
+    padding: 20px;   
+}
+
+/* Styling heading levels in the content section */
+.content h1 {
+    font-size: 50px;
+    padding-bottom: 8px;
+}
+
+.content h2 {
+    font-size: 40px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+}
+
+/* Styling paragraphs in the content section */
+.main-container .content p {
+    padding-bottom: 25px;
+    line-height: 1.3rem;
+    font-size: 17.4px;
+    font-weight: 50; /* Font weight seems mistyped, should it be 'normal'? */
+}
+
+/* Styling the video container */
+.video-container {
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the video within the video container */
+.video-container video {
+    width: 600px;
+    border-radius: 5px;
+}
+
+/* Styling the gallery of planet images */
+.planets-image-gal {
+    display: flex;
+    gap: 5px;
+}
+
+.planets-image-gal img {
+    padding-bottom: 5px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Hover effect on planet images */
+.planets-image-gal img:hover {
+    transform: scale(1.04);
+    transition: all ease 0.3s;
+}
+
+/* Styling for special spans */
+span {
+    color: #eaa03f;
+    font-size: 30px;
+}
+
+/* Styling for footer links */
+.footer-distributed .footer-left h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling the footer section */
+.footer-distributed {
+    background-color: #2d2a30;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 1rem;
+}
+
+/* Styling footer sections alignment */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Styling footer headings */
+.footer-distributed h3 {
+    color: #ffffff;    
+    margin: 0;
+}
+
+/* Styling span within footer headings */
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Styling footer links */
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+/* Styling links within footer */
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styling footer company name */
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Styling footer center section */
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+/* Styling icons within footer center section */
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 8px;
+    vertical-align: middle;
+}
+
+/* Styling envelope icon within footer center section */
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+/* Styling paragraphs within footer center section */
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Styling spans within footer center section paragraphs */
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* Styling links within footer center section paragraphs */
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+}
+
+/* Styling contact links within footer center section */
+.footer-distributed .footer-center .contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Styling footer right section */
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+/* Styling company about section within footer */
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Styling footer company about section */
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 12.8px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Styling footer icons */
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+/* Styling icons within footer */
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* Hover effect on footer icons */
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+/* Hover effect on footer links */
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+/* Styling scrollbar */
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(212, 207, 207);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(144, 144, 241);
+    border-radius: 5px;
+}

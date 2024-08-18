@@ -1,0 +1,523 @@
+/* Importing Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif; /* Default font stack with a fallback */
+}
+
+/* Setting maximum width for the body */
+body {
+    max-width: 100%;
+}
+
+/* Styling the header with a linear gradient background and an image */
+header {
+    background: linear-gradient(135deg, rgba(0,0,0,1),rgba(0,0,0,0.2)),
+    url('plantes.jpg'); /* Background gradient and image */
+    min-height: 100vh; /* Minimum height of 100% viewport height */
+    background-size: cover; /* Covering the entire background */
+}
+
+/* Styling the navigation bar */
+nav {
+    width: 100%;
+    height: 3.5rem; /* Fixed height */
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling the logo */
+nav .logo {
+    width: 25%;
+    margin: 0 0 0 12.5%;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling the menu */
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .menu a {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styling menu items on hover */
+.menu :hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Scale effect */
+    transition: all 0.20s ease; /* Smooth transition */
+    color: rgb(204, 200, 200); /* Color change */
+}
+
+/* Styling the main section */
+main {
+    height: 85vh; /* 85% of viewport height */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+    margin-left: 4%;
+}
+
+/* Styling headings */
+.head {
+    font-size: 57px;
+    font-weight: bold;
+}
+
+/* Styling paragraph inside main section */
+main section p {
+    line-height: 1.5rem;
+    font-size: 17.4px;
+}
+
+/* Styling main content container */
+.main-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling solar content */
+.content-solar {
+    max-width: 850px;
+    margin: 20px;
+    text-align: left;
+}
+
+/* Styling images inside solar content */
+.main-content-container .content-solar img{
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+/* Styling heading for solar content */
+.solar-head {
+    padding-top: 25px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Styling paragraphs inside solar content */
+.content-solar p {
+    font-size: 17.4px;
+    font-weight: 50;
+}
+
+/* Styling video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio for responsive video */
+}
+
+/* Styling embedded video */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Styling gallery header */
+.gal-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-head p {
+    padding-top: 20px;
+    font-size: 26px;
+    font-weight: 250;
+    padding-bottom: 12px;
+}
+
+/* Styling gallery container */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling gallery */
+.gallery {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 80%;
+    height: 220px;
+    display: flex;
+    gap: 5px;
+}
+
+/* Styling gallery images */
+.gallery img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 0.6s;
+    border-radius: 10px;
+    border: 3px solid grey;
+    /* Box shadow properties */
+    box-shadow: h-shadow v-shadow blur spread color;
+}
+
+/* Expanding image on hover */
+.gallery img.full-size {
+    width: 100%;
+}
+
+/* Shrinking other images on hover */
+.gallery:hover img.full-size {
+    width: 10%;
+}
+
+/* Enlarging image on hover */
+.gallery img:hover {
+    width: 100%;
+}
+
+/* Styling menu bar */
+.menu-bar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-bar ul li {
+    display: inline;
+}
+
+.menu-bar ul li a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Styling main container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling content */
+.content {
+    max-width: 70%;
+    margin-top: 20px;
+    padding: 20px;   
+}
+
+/* Styling headings inside content */
+.content h1{
+    font-size: 50px;
+    padding-bottom: 8px;
+}
+
+.content h2{
+    font-size: 40px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+}
+
+/* Styling paragraphs inside content */
+.main-container .content p{
+    padding-bottom: 25px;
+    line-height: 1.3rem;
+    font-size: 17.4px;
+    font-weight: 50;
+}
+
+/* Styling lists inside content */
+.main-container .content ul, ol{
+    padding-bottom: 25px;
+    line-height: 1.3rem;
+    font-size: 17.4px;
+    font-weight: 50;
+}
+
+/* Styling video container 2 */
+.video-container-2 {
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling video inside container 2 */
+.video-container-2 video {
+    width: 600px;
+    border-radius: 5px;
+}
+
+/* Styling image gallery for planets */
+.planets-image-gal {
+    display: flex;
+    gap: 5px;
+}
+
+.planets-image-gal img {
+    padding-bottom: 5px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.planets-image-gal img:hover {
+    transform: scale(1.04);
+    transition: all ease 0.3s;
+}
+
+/* Styling footer */
+footer {
+    bottom: 0;
+}
+
+/* Styling special text spans */
+span {
+    color: #eaa03f;
+    font-size: 30px;
+}
+
+/* Styling footer left section */
+.footer-distributed .footer-left h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling footer */
+.footer-distributed {
+    background-color: #2d2a30;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 1rem;
+}
+
+/* Styling footer sections */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Styling footer headings */
+.footer-distributed h3 {
+    color: #ffffff;    
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Styling footer links */
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styling footer company name */
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Styling footer center section */
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 8px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-center .contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Styling footer right section */
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 12.8px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Styling footer icons */
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+/* Styling footer links on hover */
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+/* Styling scrollbar */
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(212, 207, 207);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(144, 144, 241);
+    border-radius: 5px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    /* Adjusting main content container margins */
+    .main-content-container {
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    /* Adjusting menu width */
+    nav .menu {
+        width: 70%; 
+    }
+
+    /* Adjusting heading font size */
+    .head {
+        font-size: 8vw;
+    }
+
+    /* Adjusting paragraph font size */
+    main section p {
+        font-size: 3vw; 
+    }
+
+    /* Adjusting solar heading font size */
+    .solar-head {
+        padding: 3vw 0 2vw 0; 
+        font-size: 6vw; 
+    }
+
+    /* Adjusting gallery header font size */
+    .gal-head p {
+        font-size: 3.5vw; 
+        padding: 1.5vw 0 2vw 0;
+    }
+
+    /* Adjusting font size for paragraphs inside solar content */
+    .content-solar p {
+        font-size: 15.5px;
+    }
+}
